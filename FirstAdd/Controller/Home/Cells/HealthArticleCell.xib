@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="HealthArticleCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="HealthArticleCell" rowHeight="114" id="KGk-i7-Jjw" customClass="HealthArticleCell" customModule="FirstAdd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bta-E3-LK0">
+                        <rect key="frame" x="0.0" y="10" width="433" height="94"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medisons" translatesAutoresizingMaskIntoConstraints="NO" id="hXg-gt-U1c">
+                                <rect key="frame" x="5" y="5" width="60" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="vfQ-ss-ev3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The 25 Healthiest Fruits You Can Eat, According to a Nutritionist" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvp-OL-RM9">
+                                <rect key="frame" x="77" y="15.000000000000004" width="309" height="39.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jun 10, 2021 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAn-8T-fd4">
+                                <rect key="frame" x="77" y="59.333333333333329" width="71.666666666666686" height="17"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                <color key="textColor" red="0.67843137254901964" green="0.67843137254901964" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=".     5min read" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePf-PP-kPY">
+                                <rect key="frame" x="155.66666666666666" y="59.333333333333329" width="77" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="vpp-Wu-JH1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhW-bI-vsj">
+                                <rect key="frame" x="401" y="12" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Muf-Ba-F1z"/>
+                                    <constraint firstAttribute="width" constant="20" id="du2-y8-bzR"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="Bookmark"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uvp-OL-RM9" firstAttribute="leading" secondItem="hXg-gt-U1c" secondAttribute="trailing" constant="12" id="A4x-I9-hYU"/>
+                            <constraint firstItem="NhW-bI-vsj" firstAttribute="top" secondItem="Bta-E3-LK0" secondAttribute="top" constant="12" id="L1f-nu-4eL"/>
+                            <constraint firstItem="NhW-bI-vsj" firstAttribute="leading" secondItem="uvp-OL-RM9" secondAttribute="trailing" constant="15" id="WsY-c7-6v5"/>
+                            <constraint firstItem="ePf-PP-kPY" firstAttribute="leading" secondItem="IAn-8T-fd4" secondAttribute="trailing" constant="7" id="Xvl-HC-FHI"/>
+                            <constraint firstItem="uvp-OL-RM9" firstAttribute="top" secondItem="Bta-E3-LK0" secondAttribute="top" constant="15" id="avf-nc-CCb"/>
+                            <constraint firstItem="hXg-gt-U1c" firstAttribute="leading" secondItem="Bta-E3-LK0" secondAttribute="leading" constant="5" id="kPf-Py-qKA"/>
+                            <constraint firstItem="ePf-PP-kPY" firstAttribute="top" secondItem="uvp-OL-RM9" secondAttribute="bottom" constant="5" id="oCX-Ek-EDN"/>
+                            <constraint firstAttribute="bottom" secondItem="hXg-gt-U1c" secondAttribute="bottom" constant="25" id="rEa-LD-prQ"/>
+                            <constraint firstItem="hXg-gt-U1c" firstAttribute="top" secondItem="Bta-E3-LK0" secondAttribute="top" constant="5" id="y0k-eh-rVx"/>
+                            <constraint firstItem="IAn-8T-fd4" firstAttribute="leading" secondItem="uvp-OL-RM9" secondAttribute="leading" id="y10-Yh-g9M"/>
+                            <constraint firstItem="IAn-8T-fd4" firstAttribute="top" secondItem="uvp-OL-RM9" secondAttribute="bottom" constant="5" id="yRa-pX-1ud"/>
+                            <constraint firstAttribute="trailing" secondItem="NhW-bI-vsj" secondAttribute="trailing" constant="12" id="zfI-bv-yB5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Bta-E3-LK0" secondAttribute="trailing" id="Gnx-qh-T2q"/>
+                    <constraint firstItem="Bta-E3-LK0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Uij-EE-IoD"/>
+                    <constraint firstItem="Bta-E3-LK0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="VL9-Qp-Z3p"/>
+                    <constraint firstAttribute="bottom" secondItem="Bta-E3-LK0" secondAttribute="bottom" constant="10" id="pRN-YP-ku5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnBookmark" destination="NhW-bI-vsj" id="CmL-Ax-pmA"/>
+                <outlet property="img" destination="hXg-gt-U1c" id="D4t-aH-vFc"/>
+                <outlet property="lblDate" destination="IAn-8T-fd4" id="qdB-s0-aAw"/>
+                <outlet property="lblReadingTime" destination="ePf-PP-kPY" id="I6u-JR-qMZ"/>
+                <outlet property="lblTitle" destination="uvp-OL-RM9" id="sah-0g-7vv"/>
+                <outlet property="vuBackground" destination="Bta-E3-LK0" id="Nvi-FS-zxW"/>
+            </connections>
+            <point key="canvasLocation" x="80.152671755725194" y="13.380281690140846"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Bookmark" width="16.333333969116211" height="15"/>
+        <image name="medisons" width="59.333332061767578" height="46.333332061767578"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Light.ttf">
+            <string>Poppins-Light</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatsCell" rowHeight="90" id="KGk-i7-Jjw" customClass="ChatsCell" customModule="FirstAdd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="309" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="309" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEZ-8Y-PKv">
+                        <rect key="frame" x="0.0" y="0.0" width="309" height="85"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NRD-G2-JOr">
+                                <rect key="frame" x="24" y="10" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="1DU-Y9-uZB"/>
+                                    <constraint firstAttribute="width" constant="65" id="XvM-U4-672"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr.John Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vF1-4g-tYs">
+                                <rect key="frame" x="104" y="20" width="145" height="21"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fds-Pn-Iq0">
+                                <rect key="frame" x="264" y="23.666666666666668" width="30" height="14.000000000000004"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="HNI-Wq-fTE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr.John Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIE-gR-kFy">
+                                <rect key="frame" x="104" y="48" width="153" height="17"/>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="12"/>
+                                <color key="textColor" red="0.62745098040000002" green="0.6588235294" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueEllipse" translatesAutoresizingMaskIntoConstraints="NO" id="K55-Ws-Ju3">
+                                <rect key="frame" x="272" y="42.666666666666664" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="PMP-LF-poS"/>
+                                    <constraint firstAttribute="height" constant="15" id="eXh-7A-Zrx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NRD-G2-JOr" firstAttribute="leading" secondItem="WEZ-8Y-PKv" secondAttribute="leading" constant="24" id="Giw-Fl-7mO"/>
+                            <constraint firstItem="nIE-gR-kFy" firstAttribute="top" secondItem="vF1-4g-tYs" secondAttribute="bottom" constant="7" id="Igl-8z-fCa"/>
+                            <constraint firstAttribute="trailing" secondItem="fds-Pn-Iq0" secondAttribute="trailing" constant="15" id="JZT-nI-Wjm"/>
+                            <constraint firstItem="nIE-gR-kFy" firstAttribute="leading" secondItem="NRD-G2-JOr" secondAttribute="trailing" constant="15" id="Lfi-rc-0EX"/>
+                            <constraint firstItem="vF1-4g-tYs" firstAttribute="leading" secondItem="NRD-G2-JOr" secondAttribute="trailing" constant="15" id="Lv8-we-f99"/>
+                            <constraint firstItem="K55-Ws-Ju3" firstAttribute="leading" secondItem="nIE-gR-kFy" secondAttribute="trailing" constant="15" id="QZs-Tv-lzr"/>
+                            <constraint firstItem="vF1-4g-tYs" firstAttribute="top" secondItem="NRD-G2-JOr" secondAttribute="top" constant="10" id="R2G-5n-vul"/>
+                            <constraint firstAttribute="trailing" secondItem="K55-Ws-Ju3" secondAttribute="trailing" constant="22" id="Y1s-Hv-Pyq"/>
+                            <constraint firstItem="NRD-G2-JOr" firstAttribute="centerY" secondItem="WEZ-8Y-PKv" secondAttribute="centerY" id="qBJ-Z2-s31"/>
+                            <constraint firstItem="fds-Pn-Iq0" firstAttribute="leading" secondItem="vF1-4g-tYs" secondAttribute="trailing" constant="15" id="qRs-9b-tPt"/>
+                            <constraint firstItem="fds-Pn-Iq0" firstAttribute="centerY" secondItem="vF1-4g-tYs" secondAttribute="centerY" id="vVs-RI-aqf"/>
+                            <constraint firstItem="K55-Ws-Ju3" firstAttribute="top" secondItem="fds-Pn-Iq0" secondAttribute="bottom" constant="5" id="xOV-N4-iT4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WEZ-8Y-PKv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KJR-Yu-WM0"/>
+                    <constraint firstItem="WEZ-8Y-PKv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KQA-wy-OVA"/>
+                    <constraint firstAttribute="bottom" secondItem="WEZ-8Y-PKv" secondAttribute="bottom" id="Q6A-j6-nRt"/>
+                    <constraint firstAttribute="trailing" secondItem="WEZ-8Y-PKv" secondAttribute="trailing" id="db4-ns-ktN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img" destination="NRD-G2-JOr" id="4xe-Cz-4mp"/>
+                <outlet property="imgStatus" destination="K55-Ws-Ju3" id="B7B-is-pwJ"/>
+                <outlet property="lblMessage" destination="nIE-gR-kFy" id="ne4-bq-c2O"/>
+                <outlet property="lblName" destination="vF1-4g-tYs" id="osX-L5-dKe"/>
+                <outlet property="lblTime" destination="fds-Pn-Iq0" id="Abr-j4-ouz"/>
+            </connections>
+            <point key="canvasLocation" x="55.725190839694655" y="-56.690140845070424"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="blueEllipse" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

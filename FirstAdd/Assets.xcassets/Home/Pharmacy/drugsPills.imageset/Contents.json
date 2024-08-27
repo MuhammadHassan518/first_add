@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "packings-pills-capsules-medicines_1339-2254 2.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "packings-pills-capsules-medicines_1339-2254 2@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "packings-pills-capsules-medicines_1339-2254 2@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

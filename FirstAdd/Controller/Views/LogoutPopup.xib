@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="LogoutPopup" id="iN0-l3-epB" customClass="LogoutPopup" customModule="FirstAdd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="509" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewJ-0h-tTN">
+                    <rect key="frame" x="129.66666666666666" y="79" width="249.99999999999997" height="320"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logout2" translatesAutoresizingMaskIntoConstraints="NO" id="hll-Sy-W9w">
+                            <rect key="frame" x="65" y="0.0" width="120" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="Yxz-97-ANf"/>
+                                <constraint firstAttribute="width" constant="120" id="pyX-Cd-e32"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSX-ap-JU6">
+                            <rect key="frame" x="20" y="130" width="210" height="42"/>
+                            <string key="text">Are you sure to log out of
+your account?</string>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K40-VC-dDK">
+                            <rect key="frame" x="50" y="187" width="150" height="40"/>
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="mut-wk-Zxx"/>
+                                <constraint firstAttribute="height" constant="40" id="wP0-Zq-UkY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Log Out">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtT-Rm-7x2">
+                            <rect key="frame" x="50" y="242" width="150" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="HTm-yh-AEf"/>
+                                <constraint firstAttribute="width" constant="150" id="Pso-AN-tlb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" name="AccentColor"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="hll-Sy-W9w" firstAttribute="centerX" secondItem="ewJ-0h-tTN" secondAttribute="centerX" id="9IX-WR-cCT"/>
+                        <constraint firstAttribute="width" constant="250" id="9e1-9m-Rhk"/>
+                        <constraint firstItem="YSX-ap-JU6" firstAttribute="top" secondItem="hll-Sy-W9w" secondAttribute="bottom" constant="10" id="CVi-O6-AxO"/>
+                        <constraint firstItem="KtT-Rm-7x2" firstAttribute="centerX" secondItem="ewJ-0h-tTN" secondAttribute="centerX" id="Jk3-5s-wni"/>
+                        <constraint firstItem="hll-Sy-W9w" firstAttribute="top" secondItem="ewJ-0h-tTN" secondAttribute="top" id="KWq-a8-tHh"/>
+                        <constraint firstItem="K40-VC-dDK" firstAttribute="top" secondItem="YSX-ap-JU6" secondAttribute="bottom" constant="15" id="MBW-4V-qnz"/>
+                        <constraint firstItem="KtT-Rm-7x2" firstAttribute="top" secondItem="K40-VC-dDK" secondAttribute="bottom" constant="15" id="MJR-UV-uyQ"/>
+                        <constraint firstItem="K40-VC-dDK" firstAttribute="centerX" secondItem="ewJ-0h-tTN" secondAttribute="centerX" id="P9S-Zz-kLU"/>
+                        <constraint firstAttribute="trailing" secondItem="YSX-ap-JU6" secondAttribute="trailing" constant="20" id="YUM-dW-ltq"/>
+                        <constraint firstItem="YSX-ap-JU6" firstAttribute="leading" secondItem="ewJ-0h-tTN" secondAttribute="leading" constant="20" id="bWv-q2-5ac"/>
+                        <constraint firstAttribute="height" constant="320" id="jFQ-BB-f3I"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ewJ-0h-tTN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="0pM-lF-8t9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ewJ-0h-tTN" secondAttribute="bottom" constant="71" id="UTB-PA-mhl"/>
+                <constraint firstItem="ewJ-0h-tTN" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Z26-ZH-tMe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCancel" destination="KtT-Rm-7x2" id="Xye-4d-poX"/>
+                <outlet property="btnLogOut" destination="K40-VC-dDK" id="dbh-7a-lzb"/>
+                <outlet property="image" destination="hll-Sy-W9w" id="Yyj-cB-OQe"/>
+                <outlet property="lblTitle" destination="YSX-ap-JU6" id="aUE-Mb-oV5"/>
+                <outlet property="vuBack" destination="ewJ-0h-tTN" id="g2R-P2-led"/>
+            </connections>
+            <point key="canvasLocation" x="376.3358778625954" y="188.73239436619718"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logout2" width="240" height="240"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
